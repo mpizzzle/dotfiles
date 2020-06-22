@@ -1,0 +1,1 @@
+/home/mpizzzle/.local/bin/fib.sh

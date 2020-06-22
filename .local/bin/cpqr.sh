@@ -1,0 +1,1 @@
+/home/mpizzzle/.local/bin/cpqr.sh
