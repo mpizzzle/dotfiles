@@ -1,1 +1,43 @@
-/home/mpizzzle/.config/aliasrc
+#!/bin/sh
+
+# Updating to neovim
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	df="df -h" \
+	free="free -m" \
+	mkd="mkdir -pv" \
+	more="less" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner" \
+	neofetch="neofetch --kernel_shorthand on --distro_shorthand off --gtk2 off --gtk3 off --gpu_type dedicated --shell_version off --os_arch off" \
+
+# Colorisations
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	egrep="grep --color=auto" \
+	fgrep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# Abbreviations
+alias \
+	sdn="sudo shutdown -h now" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	igs="AppImageLauncher ~/Applications/GoPanda2_facfc1d6950379d12e52eff6bf2ad649.AppImage" \
+	corona="curl https://corona-stats.online/" \
+	coronauk="curl https://corona-stats.online/UK" \
+	m="mount.sh" \
+	u="fusermount -u ~/phone" \
+	k="kill.sh" \
+	e="emoji.sh" \
+	ex="extract.sh" \
+	bonsai="bonsai.sh" \
+	clip="tr -d '\n' | xclip -selection clipboard"
