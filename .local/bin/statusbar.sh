@@ -1,1 +1,3 @@
-/home/mpizzzle/.local/bin/statusbar.sh
+#!/bin/sh
+
+echo "$(internet.sh) | $(battery.sh) | $(clock.sh)"
