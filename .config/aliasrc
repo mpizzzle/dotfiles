@@ -40,4 +40,5 @@ alias \
 	e="emoji.sh" \
 	ex="extract.sh" \
 	bonsai="bonsai.sh" \
-	clip="tr -d '\n' | xclip -selection clipboard"
+	clip="tr -d '\n' | xclip -selection clipboard" \
+	en="export LANG='en_GB.UTF-8'"
