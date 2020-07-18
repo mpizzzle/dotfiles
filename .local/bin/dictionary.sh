@@ -68,7 +68,7 @@ while true; do
 
     if [ "$var" == "$user_input" ]; then
       successes=$((successes + 1))
-      fib=$(bc -l <<< "(((sqrt(5) + 1) / 2) ^ ($successes + 1) - (-((sqrt(5) + 1) / 2)) ^ -($successes + 1)) / sqrt(5)" | awk '{printf("%d\n", $1 + 0.5)}')
+      fib=$(bc -l <<< "(((sqrt(5) + 1) / 2) ^ ($successes + 1) - (-((sqrt(5) + 1) / 2)) ^ -($successes + 1)) / sqrt(5)" | awk '{printf("%d\n", ($1 + 0.5) * 5)}')
   
       echo "correct! will ask you again in $fib minutes."
       future_date=$(date --iso-8601=seconds -d "+$fib minutes")
