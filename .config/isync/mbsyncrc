@@ -1,0 +1,104 @@
+IMAPStore gmail-remote
+Host imap.gmail.com
+Port 993
+User michael770211@gmail.com
+PassCmd "pass mutt-wizard-gmail"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/gmail/
+Inbox ~/.local/share/mail/gmail/INBOX
+Flatten .
+
+Channel gmail
+Expunge Both
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore gmail-remote
+Host imap.gmail.com
+Port 993
+User michael770211@gmail.com
+PassCmd "pass mutt-wizard-gmail"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/gmail/
+Inbox ~/.local/share/mail/gmail/INBOX
+Flatten .
+
+Channel gmail
+Expunge Both
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore mpxyz-remote
+Host mail.michaelpercival.xyz
+Port 993
+User m
+PassCmd "pass mutt-wizard-mpxyz"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore mpxyz-local
+Subfolders Verbatim
+Path ~/.local/share/mail/mpxyz/
+Inbox ~/.local/share/mail/mpxyz/INBOX
+Flatten .
+
+Channel mpxyz
+Expunge Both
+Master :mpxyz-remote:
+Slave :mpxyz-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore vanessa-remote
+Host mail.cock.li
+Port 993
+User vanessa@waifu.club
+PassCmd "pass mutt-wizard-vanessa"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore vanessa-local
+Subfolders Verbatim
+Path ~/.local/share/mail/vanessa/
+Inbox ~/.local/share/mail/vanessa/INBOX
+Flatten .
+
+Channel vanessa
+Expunge Both
+Master :vanessa-remote:
+Slave :vanessa-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
