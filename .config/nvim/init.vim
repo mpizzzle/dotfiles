@@ -21,6 +21,8 @@ call plug#end()
 "set go=a
 "set mouse=a
 set nohlsearch
+set expandtab
+set tabstop=4
 "set clipboard+=unnamedplus
 
 let g:airline_theme='violet'
