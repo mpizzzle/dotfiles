@@ -15,6 +15,9 @@ Plug 'tpope/vim-fugitive'
 "Plug 'kovetskiy/sxhkd-vim'
 "Plug 'ap/vim-css-color'
 Plug 'airblade/vim-gitgutter'
+Plug 'PyGamer0/vim-apl', { 'branch': 'main' }
+Plug 'mlochbaum/BQN', {'rtp': 'editors/vim'}
+Plug 'git@git.sr.ht:~detegr/nvim-bqn'
 call plug#end()
 
 "set bg=light
@@ -41,7 +44,8 @@ endif
   let g:airline_right_alt_sep=''
   let g:airline_symbols.branch=''
   let g:airline_symbols.readonly=''
-  " let g:airline_symbols.linenr='☰'
+  "let g:airline_symbols.linenr='☰'
+  let g:airline_symbols.linenr=' ☰ '
   let g:airline_symbols.maxlinenr=''
   let g:airline_symbols.dirty=''
 

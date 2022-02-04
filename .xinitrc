@@ -35,7 +35,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 picom -b
-wallpapers.sh ~/wallpapers &
+wallpapers.sh ~/documents/wallpapers &
 
 while true; do
  xsetroot -name "$(statusbar.sh)"

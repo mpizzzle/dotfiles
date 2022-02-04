@@ -2,6 +2,8 @@
 auto-reload yes
 
 external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+ssl-verifyhost no
+ssl-verifypeer no
 
 bind-key j down
 bind-key k up
@@ -30,7 +32,7 @@ color listfocus_unread yellow default bold
 color info red black bold
 color article cyan default
 
-browser linkhandler
+browser "$BROWSER"
 macro , open-in-browser
 macro t set browser "tsp youtube-dl --add-metadata -ic"; open-in-browser ; set browser linkhandler
 macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser linkhandler
