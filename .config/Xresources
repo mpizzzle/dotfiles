@@ -94,7 +94,8 @@ Xcursor.theme: xcursor-breeze
 !*.font:          Anonymice Powerline:pixelsize=16:antialias=true:autohint=true:style=Bold
 !*.font:          Ubuntu Mono derivative Powerline:pixelsize=16:antialias=true:autohint=true
 !*.font:          APL385 Unicode:pixelsize=17:antialias=true:autohint=true
-*.font:         JuliaMono:style=Regular:pixelsize=13:antialias=true:autohint=true
+*.font:          BQN386 Nerd Font:style=Book:pixelsize=17:antialias=true:autohint=true
+!*.font:         JuliaMono:style=Regular:pixelsize=13:antialias=true:autohint=true
 !:style=Bold
 !*.letterSpace:-4
 
