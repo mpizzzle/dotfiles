@@ -33,7 +33,7 @@ done
 while true; do
   row=$(psql spanish-dictionary -q -c "SELECT word_english, word_spanish, entry_id, successes FROM dictionary WHERE next_appearance < current_timestamp ORDER BY random() limit 1;" --csv -t)
   row=$(echo $row | perl -pe 's/,(?=[^\s])/\%/g' | sed 's/"//g')
-  
+
   if [ "$row" == "" ]; then
     next_appearance=$(psql spanish-dictionary -q -c "SELECT next_appearance FROM dictionary ORDER BY next_appearance limit 1;" --csv -t)
     echo "Up to date! next question is at $next_appearance."
@@ -69,7 +69,7 @@ while true; do
     if [ "$var" == "$user_input" ]; then
       successes=$((successes + 1))
       fib=$(bc -l <<< "(((sqrt(5) + 1) / 2) ^ ($successes + 1) - (-((sqrt(5) + 1) / 2)) ^ -($successes + 1)) / sqrt(5)" | awk '{printf("%d\n", ($1 + 0.5) * 5)}')
-  
+
       echo "correct! will ask you again in $fib minutes."
       future_date=$(date --iso-8601=seconds -d "+$fib minutes")
       psql spanish-dictionary -q -c "UPDATE dictionary SET successes = $successes, next_appearance = '$future_date' WHERE entry_id = $entry_id"

@@ -3,6 +3,10 @@
 # Updating to neovim
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
+rot13() {
+    echo $1 | tr a-zA-Z n-za-mN-ZA-M
+}
+
 # Verbosity
 alias \
     cp="cp -iv" \
@@ -48,3 +52,4 @@ alias \
     dunnet="emacs -batch -l dunnet" \
     scm="scheme --quiet <" \
     qapl="apl --noCIN -q -f" \
+    lf="lfub" \

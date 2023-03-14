@@ -2,4 +2,4 @@
 
 sudo mkdir /run/postgresql/
 sudo chmod 777 /run/postgresql/
-pg_ctl -D ~/.local/db/ start
+pg_ctl -D ~/.local/new_db/ start

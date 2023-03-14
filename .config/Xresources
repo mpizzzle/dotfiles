@@ -96,7 +96,9 @@ Xcursor.theme: xcursor-breeze
 !*.font:          APL385 Unicode:pixelsize=17:antialias=true:autohint=true
 *.font:          BQN386 Nerd Font:style=Book:pixelsize=17:antialias=true:autohint=true
 !*.font:         JuliaMono:style=Regular:pixelsize=13:antialias=true:autohint=true
+!*.font:          IBM 3270:style=Regular:pixelsize=16:antialias=true:autohint=true
 !:style=Bold
+
 !*.letterSpace:-4
 
 URxvt.background:    #1E2541
